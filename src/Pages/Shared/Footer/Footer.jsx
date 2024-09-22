@@ -12,7 +12,7 @@ import { SlEarphonesAlt } from "react-icons/sl";
 import { BiTimer } from "react-icons/bi";
 const Footer = () => {
   return (
-    <div className="px-20">
+    <div className="px-10">
       <div className="grid grid-cols-4 gap-10 py-10">
         <aside className="col-span-1">
           <img src={logo} alt="" className="w-36 mb-2" />

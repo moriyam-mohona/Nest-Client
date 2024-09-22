@@ -4,7 +4,7 @@ import { MdGridView, MdOutlineLocalFireDepartment } from "react-icons/md";
 import { Link } from "react-router-dom";
 const BottomNavbar = () => {
   return (
-    <div className="flex justify-between items-center px-20">
+    <div className="flex justify-between items-center px-10">
       <div className="flex justify-between gap-5">
         {/* Browse All category Button */}
         <div className="bg-blue-700 px-2 py-1 rounded-md">

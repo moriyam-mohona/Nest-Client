@@ -9,7 +9,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 const MidNavbar = () => {
   return (
-    <div className="flex justify-between items-center gap-2 py-2 px-20">
+    <div className="flex justify-between items-center gap-2 py-2 px-10">
       <div>
         <img src={Logo} alt="Nest Logo" className="w-32" />
       </div>

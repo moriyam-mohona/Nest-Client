@@ -5,8 +5,11 @@ import Footer from "../../Pages/Shared/Footer/Footer";
 const Root = () => {
   return (
     <div className="">
+      <h2 className="bg-red-300 text-center font-bold py-2">
+        This Site is Under Development
+      </h2>
       <Navbar />
-      <div className="px-20 my-4">
+      <div className="px-10 my-4">
         <Outlet />
       </div>
       <Footer />

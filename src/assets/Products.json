@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Seeds of Change Organic Quinoa",
+    "category": "Milks & Dairies",
+    "company": "Seeds of Change",
+    "image": "https://i.ibb.co.com/LtrTMQ3/Link-product-1-1-jpg.png",
+    "price": 4.99,
+    "discount_price": 3.99,
+    "rating": 4.5,
+    "label": "Hot"
+  },
+  {
+    "title": "All Natural Italian-Style Chicken Meatballs",
+    "category": "Coffees & Teas",
+    "company": "Stouffer's",
+    "image": "https://i.ibb.co.com/12r1Xrm/Link-product-2-1-jpg.png",
+    "price": 8.99,
+    "discount_price": 7.99,
+    "rating": 4.7,
+    "label": "Best Sale"
+  },
+  {
+    "title": "Angie’s Boomchickapop Sweet & Salty Kettle Corn",
+    "category": "Coffees & Teas",
+    "company": "Angie's",
+    "image": "https://i.ibb.co.com/QkMyjJm/Link-product-3-1-jpg.png",
+    "price": 3.49,
+    "discount_price": 2.99,
+    "rating": 4.8,
+    "label": "New"
+  },
+  {
+    "title": "Silk Almond Milk",
+    "category": "Milks & Dairies",
+    "company": "Silk",
+    "image": "https://i.ibb.co.com/ZGBNvKc/Link-product-4-1-jpg.png",
+    "price": 2.99,
+    "discount_price": 2.49,
+    "rating": 4.6,
+    "label": "Hot"
+  },
+  {
+    "title": "Starbucks Medium Roast Coffee",
+    "category": "Coffees & Teas",
+    "company": "Starbucks",
+    "image": "https://i.ibb.co.com/289tHpp/Link-product-5-1-jpg.png",
+    "price": 12.99,
+    "discount_price": 10.99,
+    "rating": 4.9,
+    "label": "Sale"
+  },
+  {
+    "title": "Fresh Organic Spinach",
+    "category": "Vegetables",
+    "company": "Farm Fresh",
+    "image": "https://i.ibb.co.com/pdnHBR4/Link-product-6-1-jpg.png",
+    "price": 1.99,
+    "discount_price": 1.49,
+    "rating": 4.4,
+    "label": "New"
+  },
+  {
+    "title": "Fresh Strawberries",
+    "category": "Fruits",
+    "company": "Berry Farms",
+    "image": "https://i.ibb.co.com/3SwpYT7/Link-product-7-1-jpg.png",
+    "price": 3.99,
+    "discount_price": 2.99,
+    "rating": 4.7,
+    "label": "Best Sale"
+  },
+  {
+    "title": "Purina Dog Chow",
+    "category": "Pet Foods",
+    "company": "Purina",
+    "image": "https://i.ibb.co.com/SKBzftm/Link-product-8-1-jpg.png",
+    "price": 18.99,
+    "discount_price": 16.99,
+    "rating": 4.5,
+    "label": "Hot"
+  },
+  {
+    "title": "Organic Baby Carrots",
+    "category": "Vegetables",
+    "company": "Fresh Farms",
+    "image": "https://i.ibb.co.com/KD1Vbzw/Link-product-9-1-jpg.png",
+    "price": 2.49,
+    "discount_price": 1.99,
+    "rating": 4.3,
+    "label": "New"
+  },
+  {
+    "title": "Blue Diamond Almonds",
+    "category": "Coffees & Teas",
+    "company": "Blue Diamond",
+    "image": "https://i.ibb.co.com/hDC06yh/Link-product-10-1-jpg.png",
+    "price": 5.99,
+    "discount_price": 4.99,
+    "rating": 4.6,
+    "label": "Sale"
+  },
+  {
+    "title": "Nature Valley Granola Bars",
+    "category": "Coffees & Teas",
+    "company": "Nature Valley",
+    "image": "url_to_image_granolabars.jpg",
+    "price": 3.99,
+    "discount_price": 2.99,
+    "rating": 4.4,
+    "label": "Best Sale"
+  },
+  {
+    "title": "Coca-Cola Classic",
+    "category": "Beverages",
+    "company": "Coca-Cola",
+    "image": "url_to_image_coke.jpg",
+    "price": 1.25,
+    "discount_price": 1.0,
+    "rating": 4.2,
+    "label": "Hot"
+  },
+  {
+    "title": "Oikos Triple Zero Greek Yogurt",
+    "category": "Dairies",
+    "company": "Oikos",
+    "image": "url_to_image_yogurt.jpg",
+    "price": 1.5,
+    "discount_price": 1.25,
+    "rating": 4.5,
+    "label": "New"
+  },
+  {
+    "title": "Gala Apples",
+    "category": "Fruits",
+    "company": "Apple Orchards",
+    "image": "url_to_image_apples.jpg",
+    "price": 3.49,
+    "discount_price": 2.49,
+    "rating": 4.8,
+    "label": "Best Sale"
+  },
+  {
+    "title": "Nestlé Toll House Chocolate Chips",
+    "category": "Baking",
+    "company": "Nestlé",
+    "image": "url_to_image_chocolatechips.jpg",
+    "price": 2.99,
+    "discount_price": 2.49,
+    "rating": 4.7,
+    "label": "Hot"
+  },
+  {
+    "title": "Ben & Jerry's Ice Cream",
+    "category": "Frozen Desserts",
+    "company": "Ben & Jerry's",
+    "image": "url_to_image_icecream.jpg",
+    "price": 5.99,
+    "discount_price": 4.99,
+    "rating": 4.9,
+    "label": "New"
+  },
+  {
+    "title": "Bounty Paper Towels",
+    "category": "Household",
+    "company": "Bounty",
+    "image": "url_to_image_papertowels.jpg",
+    "price": 12.99,
+    "discount_price": 10.99,
+    "rating": 4.5,
+    "label": "Sale"
+  },
+  {
+    "title": "Tide Pods Laundry Detergent",
+    "category": "Household",
+    "company": "Tide",
+    "image": "url_to_image_detergent.jpg",
+    "price": 9.99,
+    "discount_price": 8.49,
+    "rating": 4.6,
+    "label": "Best Sale"
+  }
+]
