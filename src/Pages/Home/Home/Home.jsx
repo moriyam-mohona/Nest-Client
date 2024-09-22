@@ -5,7 +5,7 @@ import PopularProducts from "../PopularProducts/PopularProducts";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Banner />
       <CategoryCarousel />
       <PopularProducts />

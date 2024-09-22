@@ -4,7 +4,7 @@ import Footer from "../../Pages/Shared/Footer/Footer";
 
 const Root = () => {
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <h2 className="bg-red-300 text-center font-bold py-2">
         This Site is Under Development
       </h2>
