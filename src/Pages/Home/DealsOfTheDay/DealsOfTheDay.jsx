@@ -73,7 +73,7 @@ const DealsOfTheDay = () => {
               src={product.image}
               alt={product.title}
             />
-            <div className="absolute inset-x-0 z-10 top-40 bg-white shadow-lg p-4 rounded-lg mx-3 mb-4 min-h-48">
+            <div className="absolute inset-x-0 z-10 top-40 flex flex-col justify-between bg-white shadow-lg p-4 rounded-lg mx-3 mb-4 min-h-48">
               <h4 className="text-sm">{product.category}</h4>
               <h6 className="text-md font-bold">{product.title}</h6>
               <div className="flex items-center mb-2">
