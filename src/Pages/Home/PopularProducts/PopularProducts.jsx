@@ -17,6 +17,7 @@ const PopularProducts = () => {
     selectedCategory === "All"
       ? products
       : products.filter((product) => product.category === selectedCategory);
+
   return (
     <div className="relative my-4">
       {/* Header  */}
@@ -29,7 +30,7 @@ const PopularProducts = () => {
               className={`text-sm cursor-pointer ${
                 selectedCategory === category ? "text-blue-700 font-bold" : ""
               }`}
-              onClick={() => setSelectedCategory(category)} // Set the selected category on click
+              onClick={() => setSelectedCategory(category)}
             >
               {category}
             </h3>

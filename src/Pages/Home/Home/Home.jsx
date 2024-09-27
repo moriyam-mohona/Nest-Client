@@ -1,6 +1,7 @@
 import BottomBanner from "../../Shared/BottomBanner/BottomBanner";
 import Banner from "../Banner/Banner";
 import CategoryCarousel from "../CategoryCarousel/CategoryCarousel";
+import DealsOfTheDay from "../DealsOfTheDay/DealsOfTheDay";
 import PopularProducts from "../PopularProducts/PopularProducts";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <Banner />
       <CategoryCarousel />
       <PopularProducts />
+      <DealsOfTheDay />
       <BottomBanner />
     </div>
   );
