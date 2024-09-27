@@ -36,7 +36,10 @@ const DailyBestSells = () => {
       {/* Product Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
         <div className="relative">
-          <img src={image} className="w-full object-center rounded-3xl" />
+          <img
+            src={image}
+            className="w-full  h-full object-center rounded-3xl"
+          />
           <div className="absolute left-10 right-5 top-10">
             <h3 className="text-3xl font-bold mb-8">
               Bring nature into your home
