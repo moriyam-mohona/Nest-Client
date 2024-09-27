@@ -41,6 +41,7 @@ const CategoryCarousel = () => {
       behavior: "smooth",
     });
   };
+
   return (
     <div className="relative my-4">
       <div className="flex justify-between items-center mb-4">
