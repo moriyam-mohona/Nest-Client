@@ -25,16 +25,16 @@ const ProductCard = ({
         <span className="ml-3">({rating})</span>
       </div>
       <h6 className="text-sm">
-        By <span className="text-blue-700 font-semibold">{company}</span>
+        By <span className="text-blue-800 font-semibold">{company}</span>
       </h6>
       <div className="flex justify-between">
         <div className="flex items-center gap-3">
-          <h4 className="text-md font-semibold text-blue-700">${price}</h4>
+          <h4 className="text-md font-semibold text-blue-800">${price}</h4>
           {discount_price && (
             <h6 className="text-sm line-through">${discount_price}</h6>
           )}
         </div>
-        <button className="flex items-center text-blue-700 font-medium bg-blue-700/5 px-3 py-1 rounded-md">
+        <button className="flex items-center text-blue-800 font-medium bg-blue-800/5 px-3 py-1 rounded-md">
           <MdOutlineShoppingCart />
           Add
         </button>

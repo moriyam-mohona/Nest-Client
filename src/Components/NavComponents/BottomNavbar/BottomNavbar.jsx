@@ -7,7 +7,7 @@ const BottomNavbar = () => {
     <div className="flex justify-between items-center px-10">
       <div className="flex justify-between gap-5">
         {/* Browse All category Button */}
-        <div className="bg-blue-700 px-2 py-1 rounded-md">
+        <div className="bg-blue-800 px-2 py-1 rounded-md">
           <div className="dropdown">
             <div
               tabIndex={0}
@@ -39,11 +39,11 @@ const BottomNavbar = () => {
         </div>
         {/* Nav Items  */}
         <div className="flex items-center space-x-4 text-sm font-semibold">
-          <Link to="/" className="hover:text-blue-700 flex items-center gap-1">
-            <MdOutlineLocalFireDepartment className="text-blue-700 text-xl" />
+          <Link to="/" className="hover:text-blue-800 flex items-center gap-1">
+            <MdOutlineLocalFireDepartment className="text-blue-800 text-xl" />
             Deals
           </Link>
-          <Link to="/" className="hover:text-blue-700">
+          <Link to="/" className="hover:text-blue-800">
             Home
           </Link>
           <div className="dropdown">
@@ -63,7 +63,7 @@ const BottomNavbar = () => {
               </li>
             </ul>
           </div>
-          <Link to="/" className="hover:text-blue-700">
+          <Link to="/" className="hover:text-blue-800">
             About
           </Link>
 
@@ -137,7 +137,7 @@ const BottomNavbar = () => {
               </li>
             </ul>
           </div>
-          <a to="/" className="hover:text-blue-700">
+          <a to="/" className="hover:text-blue-800">
             Contact
           </a>
         </div>
@@ -147,7 +147,7 @@ const BottomNavbar = () => {
       <div className="flex gap-1 items-center">
         <img src={headphoneIcon} alt="" className="w-6 h-6" />
         <div className="flex flex-col">
-          <p className="text-xl text-blue-700 font-bold">1900 - 888</p>
+          <p className="text-xl text-blue-800 font-bold">1900 - 888</p>
           <p className="text-xs">24/7 Support Center</p>
         </div>
       </div>

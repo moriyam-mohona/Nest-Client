@@ -28,7 +28,7 @@ const PopularProducts = () => {
             <h3
               key={index}
               className={`text-sm cursor-pointer ${
-                selectedCategory === category ? "text-blue-700 font-bold" : ""
+                selectedCategory === category ? "text-blue-800 font-bold" : ""
               }`}
               onClick={() => setSelectedCategory(category)}
             >

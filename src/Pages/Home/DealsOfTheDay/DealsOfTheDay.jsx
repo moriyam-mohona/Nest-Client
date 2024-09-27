@@ -59,15 +59,15 @@ const DealsOfTheDay = () => {
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold">Deals Of The Day</h2>
-        <h3 className="font-bold text-blue-700 cursor-pointer flex items-center">
+        <h3 className="font-bold text-blue-800 cursor-pointer flex items-center">
           All Deals <MdChevronRight />
         </h3>
       </div>
 
       {/* Product Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
-        {products.slice(0, 4).map((product) => (
-          <div key={product.id} className="relative rounded-lg">
+        {products.slice(0, 4).map((product, index) => (
+          <div key={index} className="relative rounded-lg">
             <img
               className=" w-full object-cover rounded-lg"
               src={product.image}
@@ -82,13 +82,13 @@ const DealsOfTheDay = () => {
               </div>
               <h6 className="text-sm">
                 By{" "}
-                <span className="text-blue-700 font-semibold">
+                <span className="text-blue-800 font-semibold">
                   {product.company}
                 </span>
               </h6>
               <div className="flex justify-between items-center mt-2">
                 <div className="flex items-center gap-3">
-                  <h4 className="text-md font-semibold text-blue-700">
+                  <h4 className="text-md font-semibold text-blue-800">
                     ${product.price}
                   </h4>
                   {product.discount_price && (
@@ -97,7 +97,7 @@ const DealsOfTheDay = () => {
                     </h6>
                   )}
                 </div>
-                <button className="flex items-center text-blue-700 font-medium bg-blue-700/5 px-3 py-1 rounded-md">
+                <button className="flex items-center text-blue-800 font-medium bg-blue-800/5 px-3 py-1 rounded-md">
                   <MdOutlineShoppingCart />
                   Add
                 </button>

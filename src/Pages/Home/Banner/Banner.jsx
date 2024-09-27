@@ -33,7 +33,7 @@ const Banner = () => {
             </div>
             <button
               type="submit"
-              className="absolute right-0 bg-blue-700 text-white text-xs px-5 py-3 rounded-full"
+              className="absolute right-0 bg-blue-800 text-white text-xs px-5 py-3 rounded-full"
             >
               Subscribe
             </button>
