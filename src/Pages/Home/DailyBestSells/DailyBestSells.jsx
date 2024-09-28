@@ -14,7 +14,7 @@ const DailyBestSells = () => {
   //       : products.filter((product) => product.category === selectedCategory);
 
   return (
-    <div className="my-4 relative mb-32">
+    <div className="my-4 relative">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold">Daily Best Sells</h2>
@@ -76,6 +76,7 @@ const DailyBestSells = () => {
                 </h6>
               )}
             </div>
+            {/* progressbar  */}
             <div className="w-full bg-gray-200 rounded-full h-1">
               <div
                 className="bg-blue-800 h-1 rounded-full"

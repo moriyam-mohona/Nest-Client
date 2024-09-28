@@ -69,7 +69,7 @@ const CategoryCarousel = () => {
         {categories.map((category, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-28 px-1 py-5 rounded-lg bg-gray-100 text-center"
+            className="flex-shrink-0 w-28 px-1 py-5 rounded-lg bg-blue-800/10 text-center"
           >
             <img
               src={category.image}

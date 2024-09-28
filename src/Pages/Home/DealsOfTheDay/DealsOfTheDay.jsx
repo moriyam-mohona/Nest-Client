@@ -55,7 +55,7 @@ const products = [
 ];
 const DealsOfTheDay = () => {
   return (
-    <div className="my-4 relative mb-32">
+    <div className="my-4 relative mb-36">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold">Deals Of The Day</h2>
