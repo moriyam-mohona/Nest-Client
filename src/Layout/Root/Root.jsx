@@ -9,7 +9,7 @@ const Root = () => {
         This Site is Under Development
       </h2>
       <Navbar />
-      <div className="px-10 my-4">
+      <div className="px-5 lg:px-10 my-4">
         <Outlet />
       </div>
       <Footer />
