@@ -1,24 +1,35 @@
 import { useState } from "react";
 import products from "../../../assets/Products.json";
-import { AiFillStar } from "react-icons/ai";
+import { AiFillStar, AiOutlineClose } from "react-icons/ai";
 import image from "../../../assets/DailySell.png";
 import { FaArrowRight } from "react-icons/fa";
+import { FaAnglesRight } from "react-icons/fa6";
 
 const DailyBestSells = () => {
   const [selectedCategory, setSelectedCategory] = useState("Featured");
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const categories = ["Featured", "Popular", "New added"];
-  //   const filteredProducts =
-  //     selectedCategory === "All"
-  //       ? products
-  //       : products.filter((product) => product.category === selectedCategory);
 
   return (
     <div className="my-4 relative">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold">Daily Best Sells</h2>
-        <div className="flex gap-4">
+
+        {/* Hamburger Menu */}
+        <div className="md:hidden">
+          <button onClick={toggleMenu}>
+            {menuOpen ? (
+              <AiOutlineClose className="text-sm" />
+            ) : (
+              <FaAnglesRight className="text-sm" />
+            )}
+          </button>
+        </div>
+        {/* Category Links */}
+        <div className="hidden md:flex gap-4">
           {categories.map((category, index) => (
             <h3
               key={index}
@@ -33,14 +44,36 @@ const DailyBestSells = () => {
         </div>
       </div>
 
+      {/* Dropdown Menu*/}
+      {menuOpen && (
+        <div className="absolute top-12 left-0 w-full bg-white shadow-md z-50 md:hidden">
+          <div className="flex flex-col p-4">
+            {categories.map((category, index) => (
+              <h3
+                key={index}
+                className={`text-sm cursor-pointer mb-2 ${
+                  selectedCategory === category ? "text-blue-800 font-bold" : ""
+                }`}
+                onClick={() => {
+                  setSelectedCategory(category);
+                  setMenuOpen(false);
+                }}
+              >
+                {category}
+              </h3>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Product Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-        <div className="relative">
+      <div className="flex gap-4 overflow-x-auto lg:grid lg:grid-cols-5 lg:gap-3 lg:overflow-visible">
+        <div className="relative hidden lg:flex">
           <img
             src={image}
-            className="w-full  h-full object-center rounded-3xl"
+            className="w-full h-full object-center rounded-3xl"
           />
-          <div className="absolute left-10 right-5 top-10">
+          <div className="absolute md:left-5 md:right-5 lg:left-5 lg:right-5 top-10">
             <h3 className="text-3xl font-bold mb-8">
               Bring nature into your home
             </h3>
@@ -48,11 +81,11 @@ const DailyBestSells = () => {
               Shop Now <FaArrowRight className="text-sm" />
             </button>
           </div>
-        </div>{" "}
+        </div>
         {products.slice(0, 4).map((product, index) => (
           <div
             key={index}
-            className="flex flex-col justify-between border rounded-3xl p-5 shadow-md space-y-1"
+            className="min-w-[250px] lg:min-w-0 flex flex-col justify-between border rounded-3xl p-5 shadow-md space-y-1"
           >
             <img
               src={product.image}
@@ -71,12 +104,13 @@ const DailyBestSells = () => {
                 ${product.price}
               </h4>
               {product.discount_price && (
-                <h6 className="text-sm line-through ">
+                <h6 className="text-sm line-through">
                   ${product.discount_price}
                 </h6>
               )}
             </div>
-            {/* progressbar  */}
+
+            {/* progress bar */}
             <div className="w-full bg-gray-200 rounded-full h-1">
               <div
                 className="bg-blue-800 h-1 rounded-full"

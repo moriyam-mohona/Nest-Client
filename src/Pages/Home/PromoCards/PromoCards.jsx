@@ -27,11 +27,11 @@ const PromoCards = () => {
     },
   ];
   return (
-    <div className="my-6 grid sm:grid-cols-2 lg:grid-cols-5 gap-3">
+    <div className="my-6 flex gap-3 overflow-x-auto lg:grid lg:grid-cols-5 lg:overflow-x-visible">
       {promotions.map((promotion, index) => (
         <div
           key={index}
-          className="bg-blue-800/10 shadow-md rounded-lg flex gap-3 items-center p-3"
+          className="bg-blue-800/10 shadow-md rounded-lg flex gap-3 items-center py-5 p-3 min-w-[250px] lg:min-w-0"
         >
           <img
             src={promotion.image}

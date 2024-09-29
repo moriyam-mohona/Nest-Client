@@ -16,15 +16,15 @@ const PromotionBanner = () => {
     },
   ];
   return (
-    <div className="my-4 flex gap-3">
+    <div className="my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
       {promotions.map((promotion, index) => (
         <div key={index} className="relative">
           <img src={promotion.image} alt="" className="w-full h-auto" />
-          <div className="absolute left-10 right-40 top-10">
+          <div className="absolute left-7 right-10 top-10 md:left-7 md:right-10 md:top-10 lg:left-10 lg:right-40 lg:top-10">
             <h3 className="text-lg font-bold">{promotion.text}</h3>
           </div>
-          {/* Position the button at the bottom of each banner */}
-          <div className="absolute bottom-12 left-10">
+
+          <div className="absolute bottom-20 md:bottom-16 lg:bottom-24 left-6 md:left-6 lg:left-10">
             <button className="bg-blue-800 text-white text-xs flex items-center gap-2 px-4 py-2 rounded-md">
               Shop Now <FaArrowRight className="text-sm" />
             </button>

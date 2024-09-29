@@ -118,16 +118,19 @@ const ProductSpotlight = () => {
 
   return (
     <div className="my-6 space-y-10">
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+      <div className="flex overflow-x-auto gap-3 lg:grid lg:grid-cols-4 lg:overflow-x-visible">
         {sections.map((section, index) => (
-          <div key={index} className="">
+          <div key={index} className="min-w-[250px] lg:min-w-0">
             <h3 className="text-xl font-bold mb-4">{sectionNames[index]}</h3>
+
+            {/* progress bar */}
             <div className="w-full bg-blue-800/10 rounded-full h-1 mb-10">
               <div
                 className="bg-blue-800/20 h-1 rounded-full"
                 style={{ width: "20%" }}
               ></div>
             </div>
+
             <div className="flex flex-col gap-2">
               {products
                 .filter((product) => product.section === section)

@@ -11,15 +11,15 @@ const ProductCard = ({
   discount_price,
 }) => {
   return (
-    <div className="flex flex-col justify-between border rounded-3xl p-5 shadow-md space-y-1">
+    <div className="flex flex-col justify-between border rounded-3xl p-2 md:p-3 lg:p-5 shadow-md space-y-1">
       <img
         src={image}
         alt={title}
-        className="w-full h-40 object-contain rounded-t-3xl mb-4"
+        className="w-full h-40 object-contain rounded-t-3xl md:mb-2 lg:mb-4"
       />
 
       <h4 className="text-sm">{category}</h4>
-      <h6 className="text-md font-bold">{title}</h6>
+      <h6 className="text-sm md:text-base font-bold">{title}</h6>
       <div className="flex items-center mb-2">
         <AiFillStar className="text-yellow-500" />
         <span className="ml-3">({rating})</span>
