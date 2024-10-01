@@ -14,7 +14,7 @@ const navItems = [
       { name: "Deal 2", link: "/" },
     ],
   },
-  { title: "Home", link: "/Home" },
+  { title: "Home", link: "/" },
   { title: "About", link: "/About" },
 
   {
