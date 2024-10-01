@@ -14,7 +14,9 @@ const navItems = [
       { name: "Deal 2", link: "/" },
     ],
   },
-  { title: "Home", link: "/" },
+  { title: "Home", link: "/Home" },
+  { title: "About", link: "/About" },
+
   {
     title: "Shop",
     link: "/",
@@ -26,7 +28,6 @@ const navItems = [
       { name: "Monitors", link: "/" },
     ],
   },
-  { title: "About", link: "/" },
   {
     title: "Vendors",
     link: "/",
@@ -164,6 +165,7 @@ const BottomNavbar = () => {
                 to={item.link}
                 className=" text-md py-2 shadow-sm flex justify-between items-center"
                 onClick={() => {
+                  toggleMenu(); // Close the menu when the link is clicked
                   if (!item.dropdown) closeDropdown();
                 }}
               >
@@ -189,7 +191,10 @@ const BottomNavbar = () => {
                       <Link
                         to={dropdownItem.link}
                         className="block px-4 py-2"
-                        onClick={closeDropdown}
+                        onClick={() => {
+                          toggleMenu(); // Close the menu when dropdown item is clicked
+                          closeDropdown();
+                        }}
                       >
                         {dropdownItem.name}
                       </Link>
