@@ -124,9 +124,9 @@ const ProductSpotlight = () => {
             <h3 className="text-xl font-bold mb-4">{sectionNames[index]}</h3>
 
             {/* progress bar */}
-            <div className="w-full bg-blue-800/10 rounded-full h-1 mb-10">
+            <div className="w-full bg-green-800/10 rounded-full h-1 mb-10">
               <div
-                className="bg-blue-800/20 h-1 rounded-full"
+                className="bg-green-800/20 h-1 rounded-full"
                 style={{ width: "20%" }}
               ></div>
             </div>

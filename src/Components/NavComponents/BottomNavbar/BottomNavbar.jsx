@@ -71,7 +71,7 @@ const BottomNavbar = () => {
         {/* Browse Categories Button */}
         <div className="relative hidden lg:flex">
           <button
-            className="flex items-center bg-blue-800 text-white px-3 py-2 rounded-md"
+            className="flex items-center bg-green-800 text-white px-3 py-2 rounded-md"
             onClick={() => handleDropdownToggle(-1)}
           >
             Browse Categories <RiArrowDropDownLine className="ml-1" />
@@ -101,7 +101,7 @@ const BottomNavbar = () => {
             <div className="relative" key={index}>
               <Link
                 to={item.link}
-                className="hover:text-blue-800 flex items-center"
+                className="hover:text-green-800 flex items-center"
                 onClick={() => {
                   if (item.dropdown) {
                     handleDropdownToggle(index);
@@ -139,7 +139,7 @@ const BottomNavbar = () => {
         <div className="lg:hidden">
           <button
             onClick={toggleMenu}
-            className="text-3xl font-extrabold text-blue-800 my-auto py-3"
+            className="text-3xl font-extrabold text-green-800 my-auto py-3"
           >
             {isOpen ? <MdClose /> : <MdMenu />}
           </button>
@@ -149,7 +149,7 @@ const BottomNavbar = () => {
         <div className="hidden lg:flex gap-1 items-center">
           <img src={headphoneIcon} alt="" className="w-6 h-6" />
           <div className="flex flex-col">
-            <p className="text-xl text-blue-800 font-bold">1900 - 888</p>
+            <p className="text-xl text-green-800 font-bold">1900 - 888</p>
             <p className="text-xs">24/7 Support Center</p>
           </div>
         </div>

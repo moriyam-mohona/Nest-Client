@@ -45,28 +45,28 @@ const products = [
 ];
 const DealsOfTheDay = () => {
   return (
-    <div className="my-4 relative mb-36">
+    <div className="relative my-4 h-[320px] md:h-[350px] lg:h-[400px] overflow-hidden">
       {/* Header */}
-      <div className="flex justify-between items-center mb-6">
+      <div className="relative flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold">Deals Of The Day</h2>
-        <h3 className="font-bold text-blue-800 cursor-pointer flex items-center">
+        <h3 className="font-bold text-green-800 cursor-pointer flex items-center">
           All Deals <MdChevronRight />
         </h3>
       </div>
 
       {/* Product Cards */}
-      <div className="flex gap-4 overflow-x-auto lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible">
+      <div className="flex gap-4 overflow-x-auto lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible h-full">
         {products.map((product, index) => (
           <div
             key={index}
-            className="min-w-[250px] lg:min-w-0 relative rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            className="min-w-[250px] lg:min-w-0 relative rounded-lg "
           >
             <img
-              className="w-full object-cover rounded-lg"
+              className="w-full h-48 object-cover rounded-lg"
               src={product.image}
               alt={product.title}
             />
-            <div className="absolute inset-x-0 top-28 z-10 bg-white shadow-md p-4 rounded-lg mx-3 mb-4 transform translate-y-8 hover:translate-y-0 transition duration-300 ease-in-out">
+            <div className="absolute inset-x-0 top-10 md:top-20 lg:top-28 z-50 bg-white shadow-md p-3 md:p-4 rounded-lg mx-2 lg:mx-3 mb-4 h-52">
               <h4 className="text-sm">{product.category}</h4>
               <h6 className="text-md font-bold mb-2">{product.title}</h6>
 
@@ -77,23 +77,23 @@ const DealsOfTheDay = () => {
 
               <h6 className="text-sm mb-2">
                 By{" "}
-                <span className="text-blue-800 font-semibold">
+                <span className="text-green-800 font-semibold">
                   {product.company}
                 </span>
               </h6>
 
               <div className="flex justify-between items-center mt-3">
                 <div className="flex items-center gap-2">
-                  <h4 className="text-md font-semibold text-blue-800">
+                  <h4 className="text-md font-semibold text-green-800">
                     ${product.price}
                   </h4>
                   {product.discount_price && (
-                    <h6 className="text-sm line-through text-gray-500">
+                    <h6 className="text-sm line-through text-green-800">
                       ${product.discount_price}
                     </h6>
                   )}
                 </div>
-                <button className="flex items-center text-blue-800 font-medium bg-blue-800/5 px-3 py-1 rounded-md hover:bg-blue-800/10 transition">
+                <button className="flex items-center text-green-800 font-medium bg-green-800/5 px-3 py-1 rounded-md hover:bg-green-800/10 transition">
                   <MdOutlineShoppingCart className="mr-1" />
                   Add
                 </button>

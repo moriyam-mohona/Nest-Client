@@ -51,11 +51,11 @@ const MidNavbar = () => {
       <div className="flex justify-between items-center gap-4">
         <div className="hidden lg:flex items-center gap-1 border rounded-md px-3 py-2 shadow-sm">
           <CiLocationOn />
-          <p className="text-blue-800 text-sm">Your Location</p>
+          <p className="text-green-800 text-sm">Your Location</p>
         </div>
         <div className="flex items-baseline gap-1">
           <div className="indicator">
-            <span className="indicator-item badge badge-sm bg-blue-800 text-white py-2 px-1">
+            <span className="indicator-item badge badge-sm bg-green-800 text-white py-2 px-1">
               3
             </span>
             <img src={compare} alt="" className="w-5 h-5" />
@@ -64,7 +64,7 @@ const MidNavbar = () => {
         </div>
         <div className="flex items-baseline gap-1">
           <div className="indicator">
-            <span className="indicator-item badge badge-sm bg-blue-800 text-white py-2 px-1">
+            <span className="indicator-item badge badge-sm bg-green-800 text-white py-2 px-1">
               3
             </span>
             <img src={wishlist} alt="" className="w-5 h-5" />
@@ -73,7 +73,7 @@ const MidNavbar = () => {
         </div>
         <div className="flex items-baseline gap-1">
           <div className="indicator">
-            <span className="indicator-item badge badge-sm bg-blue-800 text-white py-2 px-1">
+            <span className="indicator-item badge badge-sm bg-green-800 text-white py-2 px-1">
               3
             </span>
             <img src={cart} alt="" className="w-5 h-5" />

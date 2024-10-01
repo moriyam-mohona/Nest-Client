@@ -34,7 +34,7 @@ const DailyBestSells = () => {
             <h3
               key={index}
               className={`text-sm cursor-pointer ${
-                selectedCategory === category ? "text-blue-800 font-bold" : ""
+                selectedCategory === category ? "text-green-800 font-bold" : ""
               }`}
               onClick={() => setSelectedCategory(category)}
             >
@@ -52,7 +52,9 @@ const DailyBestSells = () => {
               <h3
                 key={index}
                 className={`text-sm cursor-pointer mb-2 ${
-                  selectedCategory === category ? "text-blue-800 font-bold" : ""
+                  selectedCategory === category
+                    ? "text-green-800 font-bold"
+                    : ""
                 }`}
                 onClick={() => {
                   setSelectedCategory(category);
@@ -77,7 +79,7 @@ const DailyBestSells = () => {
             <h3 className="text-3xl font-bold mb-8">
               Bring nature into your home
             </h3>
-            <button className="bg-blue-800 text-white text-sm flex items-center gap-2 px-4 py-2 rounded-md">
+            <button className="bg-green-800 text-white text-sm flex items-center gap-2 px-4 py-2 rounded-md">
               Shop Now <FaArrowRight className="text-sm" />
             </button>
           </div>
@@ -100,7 +102,7 @@ const DailyBestSells = () => {
               <span className="ml-3">({product.rating})</span>
             </div>
             <div className="flex items-center gap-3">
-              <h4 className="text-md font-semibold text-blue-800">
+              <h4 className="text-md font-semibold text-green-800">
                 ${product.price}
               </h4>
               {product.discount_price && (
@@ -113,13 +115,13 @@ const DailyBestSells = () => {
             {/* progress bar */}
             <div className="w-full bg-gray-200 rounded-full h-1">
               <div
-                className="bg-blue-800 h-1 rounded-full"
+                className="bg-green-800 h-1 rounded-full"
                 style={{ width: "50%" }}
               ></div>
             </div>
             <h6 className="text-sm">Sold: 90/120</h6>
 
-            <button className="flex items-center justify-center w-full text-white text-sm text-center font-medium bg-blue-800 py-2 rounded-md">
+            <button className="flex items-center justify-center w-full text-white text-sm text-center font-medium bg-green-800 py-2 rounded-md">
               Add To Cart
             </button>
           </div>

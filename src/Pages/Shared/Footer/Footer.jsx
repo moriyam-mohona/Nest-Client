@@ -22,27 +22,27 @@ const Footer = () => {
           </p>
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-1">
-              <GrLocation className="text-blue-800 text-3xl hidden lg:flex" />
+              <GrLocation className="text-green-800 text-3xl hidden lg:flex" />
               <p className="text-xs">
                 <span className="font-semibold"> Address : </span>5171 W
                 Campbell Ave undefined Kent, Utah 53127 United States
               </p>
             </div>
             <div className="flex items-center gap-1">
-              <SlEarphonesAlt className="text-blue-800 hidden lg:flex" />
+              <SlEarphonesAlt className="text-green-800 hidden lg:flex" />
               <p className="text-xs">
                 <span className="font-semibold">Call Us : </span>(+91) -
                 540-025-124553
               </p>
             </div>
             <div className="flex items-center gap-1">
-              <LuSend className="text-blue-800 hidden lg:flex" />
+              <LuSend className="text-green-800 hidden lg:flex" />
               <p className="text-xs">
                 <span className="font-semibold"> Email : </span>sale@Nest.com
               </p>
             </div>
             <div className="flex items-center gap-1">
-              <BiTimer className="text-blue-800 text-xl hidden lg:flex" />
+              <BiTimer className="text-green-800 text-xl hidden lg:flex" />
               <p className="text-xs">
                 <span className="font-semibold">Hours : </span>10:00 - 18:00,
                 Mon - Sat
@@ -116,7 +116,7 @@ const Footer = () => {
           <div className="flex gap-2 lg:gap-4 items-center">
             <LuPhoneCall className="w-4 h-4 lg:w-6 lg:h-6" />
             <div className="flex flex-col gap-0">
-              <p className="text-md lg:text-xl text-blue-800 font-semibold">
+              <p className="text-md lg:text-xl text-green-800 font-semibold">
                 1900 - 6666
               </p>
               <p className="text-xs">Working 8:00 - 22:00</p>
@@ -125,7 +125,7 @@ const Footer = () => {
           <div className="flex gap-2 lg:gap-4  items-center">
             <LuPhoneCall className="w-4 h-4 lg:w-6 lg:h-6" />
             <div className="flex flex-col">
-              <p className="text-md lg:text-xl text-blue-800 font-semibold">
+              <p className="text-md lg:text-xl text-green-800 font-semibold">
                 1900 - 888
               </p>
               <p className="text-xs">24/7 Support Center</p>
@@ -137,11 +137,11 @@ const Footer = () => {
           <div className="flex gap-4 items-center">
             <p className="text-md font-semibold">Follow Us</p>
             <div className="flex gap-1">
-              <RiFacebookFill className="bg-blue-800 text-2xl text-white rounded-full p-1" />
-              <IoLogoTwitter className="bg-blue-800 text-2xl text-white rounded-full p-1" />
-              <FaInstagram className="bg-blue-800 text-2xl text-white rounded-full p-1" />
-              <FaPinterestP className="bg-blue-800 text-2xl text-white rounded-full p-1" />
-              <FaYoutube className="bg-blue-800 text-2xl text-white rounded-full p-1" />
+              <RiFacebookFill className="bg-green-800 text-2xl text-white rounded-full p-1" />
+              <IoLogoTwitter className="bg-green-800 text-2xl text-white rounded-full p-1" />
+              <FaInstagram className="bg-green-800 text-2xl text-white rounded-full p-1" />
+              <FaPinterestP className="bg-green-800 text-2xl text-white rounded-full p-1" />
+              <FaYoutube className="bg-green-800 text-2xl text-white rounded-full p-1" />
             </div>
           </div>
           <p className="text-xs text-center sm:text-left mt-2">

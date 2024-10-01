@@ -15,9 +15,9 @@ const SpotlightCard = ({ title, image, rating, price, discount_price }) => {
           <span className="text-sm">({rating})</span>
         </div>
         <div className="flex items-center gap-2">
-          <h4 className="text-sm font-semibold text-blue-800">${price}</h4>
+          <h4 className="text-sm font-semibold text-green-800">${price}</h4>
           {discount_price && (
-            <h6 className="text-xs line-through text-blue-800">
+            <h6 className="text-xs line-through text-green-800">
               ${discount_price}
             </h6>
           )}

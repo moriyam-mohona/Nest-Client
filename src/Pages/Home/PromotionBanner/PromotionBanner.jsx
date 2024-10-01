@@ -25,7 +25,7 @@ const PromotionBanner = () => {
           </div>
 
           <div className="absolute bottom-20 md:bottom-16 lg:bottom-24 left-6 md:left-6 lg:left-10">
-            <button className="bg-blue-800 text-white text-xs flex items-center gap-2 px-4 py-2 rounded-md">
+            <button className="bg-green-800 text-white text-xs flex items-center gap-2 px-4 py-2 rounded-md">
               Shop Now <FaArrowRight className="text-sm" />
             </button>
           </div>
