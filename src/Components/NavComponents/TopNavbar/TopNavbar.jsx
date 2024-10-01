@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const TopNavbar = () => {
   return (
-    <div className="flex justify-between py-2 px-10">
+    <div className=" justify-between py-2 px-10 hidden lg:flex">
       <div className="flex gap-3 items-center">
         <Link to="/" className="text-sm">
           About Us

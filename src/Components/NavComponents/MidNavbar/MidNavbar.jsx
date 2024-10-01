@@ -9,11 +9,13 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 const MidNavbar = () => {
   return (
-    <div className="flex justify-between items-center gap-2 py-2 px-10">
-      <div>
-        <img src={Logo} alt="Nest Logo" className="w-32" />
-      </div>
-      <div className="flex items-center border rounded-md ">
+    <div className="flex justify-between items-center gap-2 py-2 px-5 lg:px-10">
+      <img
+        src={Logo}
+        alt="Nest Logo"
+        className="w-28 h-8 md:w-32 md:h-10 lg:w-32 lg:h-10"
+      />
+      <div className="hidden lg:flex items-center border rounded-md ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="flex items-center">
             <span className="text-md ml-4">All Categories</span>
@@ -45,8 +47,9 @@ const MidNavbar = () => {
           <IoIosSearch className="text-gray-500 mr-4" />
         </label>
       </div>
+
       <div className="flex justify-between items-center gap-4">
-        <div className="flex items-center gap-1 border rounded-md px-3 py-2 shadow-sm">
+        <div className="hidden lg:flex items-center gap-1 border rounded-md px-3 py-2 shadow-sm">
           <CiLocationOn />
           <p className="text-blue-800 text-sm">Your Location</p>
         </div>
@@ -57,7 +60,7 @@ const MidNavbar = () => {
             </span>
             <img src={compare} alt="" className="w-5 h-5" />
           </div>
-          <p className="text-sm">Compare</p>
+          <p className="hidden lg:flex text-sm">Compare</p>
         </div>
         <div className="flex items-baseline gap-1">
           <div className="indicator">
@@ -66,7 +69,7 @@ const MidNavbar = () => {
             </span>
             <img src={wishlist} alt="" className="w-5 h-5" />
           </div>
-          <p className="text-sm">Wishlist</p>
+          <p className="hidden lg:flex text-sm">Wishlist</p>
         </div>
         <div className="flex items-baseline gap-1">
           <div className="indicator">
@@ -75,11 +78,11 @@ const MidNavbar = () => {
             </span>
             <img src={cart} alt="" className="w-5 h-5" />
           </div>
-          <p className="text-sm">Cart</p>
+          <p className="hidden lg:flex text-sm">Cart</p>
         </div>
         <div className="flex items-baseline gap-1">
           <img src={account} alt="" className="w-5 h-5" />
-          <p className="text-sm">Account</p>
+          <p className="hidden lg:flex text-sm">Account</p>
         </div>
       </div>
     </div>
